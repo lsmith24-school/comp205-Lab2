@@ -1,0 +1,251 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title> Lauren Smith lab2 </title>
+	</head>
+	
+	<body style="background-color:aqua;">
+	<h1> COMP 205 Lab 2 </h1>
+	<h2> Nested Lists </h2>
+	<!-- 
+	Version 1: Nested Lists
+Use any combination of ordered (<ol>), unordered <ul>,  and definition (<dl>) lists to create an HTML version of your class schedule.  
+The schedule should include the following information:  
+•	day of week,
+•	time of day for each lecture or lab
+•	length of class or lab (in hours), 
+•	type (lab or lecture), 
+•	course name, 
+•	teacher name. 
+You may use the HTML list types in any way you prefer.  
+You must use at last two different list types 
+You must use two levels of nesting (e.g.   unordered list nested inside a definition list )
+Indent your HTML code to emphasize the nesting of elements  
+	-->
+	<ul> 
+		<li> 
+			<h3> Monday </h3> 
+				<dl> 
+					<dt> 12:30 PM - 2:30 PM </dt>
+					<dd> COMP 211 - Program Design </dd>
+					<dd> Lecture </dd>
+					<dd> Janis Michael </dd>
+					<dd> Length: 2hrs </dd>
+				</dl> 
+				
+				<dl> 
+					<dt> 2:30 PM - 3:30 PM </dt>
+					<dd> COMM 110 - Communitication For College  </dd>
+					<dd> Lecture </dd>
+					<dd> Brooke Leeson </dd>
+					<dd> Length: 1hr </dd>
+				</dl> 
+				
+				<dl> 
+					<dt> 5:30 PM - 6:30 PM  </dt>
+					<dd> COMP 1100 - Intro to C++ programming </dd>
+					<dd> Lab </dd>
+					<dd> Colin Graves </dd>
+					<dd> Length: 1hr </dd>
+				</dl> 
+		</li>
+		<li>
+			<h3> Tuesday </h3> 
+			<dl> 
+				<dt> 12:30 pm - 1:30 </dt>
+				<dd> COMP 211 - program design  </dd>
+				<dd> Lecture </dd>
+				<dd> Janis Michael </dd>
+				<dd> Length: 1hr </dd>
+			</dl> 
+		</li> 
+		<li>
+			<h3> Wednesday </h3> 
+			<dl> 
+				<dt> 10:30 am - 12:30 pm </dt>
+				<dd> Math 8 - Intro Computer Mathematics  </dd>
+				<dd> Lecture </dd>
+				<dd> Miles Wilson </dd>
+				<dd> Length: 2hr </dd>
+			</dl> 
+		</li>
+		<li> 
+			<h3> Thursday </h3>
+			<dl> 
+				<dt> 10:30 am - 12:30 pm </dt>
+				<dd> COMP 205 - Web Development </dd>
+				<dd> Lab </dd>
+				<dd> Colin Banger </dd>
+				<dd> Length: 2hr </dd>
+			</dl> 
+			
+			<dl> 
+				<dt> 1:30 pm - 2:30 pm </dt>
+				<dd> COMP 205 - Web Development </dd>
+				<dd> Lecture </dd>
+				<dd> Colin Banger </dd>
+				<dd> Length: 1hr </dd>
+			</dl> 
+			<dl> 
+				<dt> 2:30 pm - 4:30 pm </dt>
+				<dd> Comm 110 - Communitication for college </dd>
+				<dd> Lecture  </dd>
+				<dd> Brooke Leeson </dd>
+				<dd> Length: 2hr </dd>
+			</dl> 
+		</li>
+		<li> 
+		<h3> Friday </h3> 
+			<dl> 
+				<dt> 11:30 am - 12:30pm  </dt>
+				<dd> Math8 - Intro Computer Mathematics </dd>
+				<dd> Lecture </dd>
+				<dd> Miles Wilson </dd>
+				<dd> Length: 1hr </dd>
+			</dl> 
+				
+				<dl> 
+					<dt> 2:30 pm - 4:30 pm </dt>
+					<dd> COMP 1100 - Intro to C++ programming </dd>
+					<dd> Lecture </dd>
+					<dd> Colin Graves </dd>
+					<dd> Length: 2hr </dd>
+				</dl> 
+		</li>
+		
+	</ul>
+	
+	
+	<!--
+	Version 2: Table
+Create an HTML table to display your weekly class schedule.  
+ The table should display days of the week (column headers) and times of the day (row headers).  
+ The following information should be contained in the tables cells corresponding to the day (column) and time (row) of each of your labs or lectures: 
+•	course name,
+•	type (lab or lecture), 
+•	teacher name.
+If a lab or lecture is scheduled for longer than one hour you should duplicate the information in each of cells that correspond to the lab/lecture time. 
+Your table must be created using a <table> <tr> <td> and <th> elements.
+	-->
+	<h2> Tables </h2>
+	<table border=1>
+		<tr>
+			<th> Time </th> 
+			<th> Monday </th>
+			<th> Tuesday </th>
+			<th> Wednesday </th>
+			<th> Thursday </th>
+			<th> Friday </th>
+		</tr>
+		<tr>
+			<td> 10:30 AM </td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> MATH8 - Intro Computer Mathematics<br/>
+				Lecture<br/>
+				Miles Wilson
+			</td>
+			<td> COMP 205 - Web Development<br/>
+				 Lab <br/>
+				 Colin Banger
+			</td>
+			<td> &nbsp;</td>
+		</tr>
+		<tr>
+			<td> 11:30 AM </td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> MATH8 - Intro Computer Mathematics<br/>
+				Lecture<br/>
+				Miles Wilson 
+			</td>
+			<td> COMP 205 - Web Development<br/>
+				 Lab <br/>
+				 Colin Banger
+			</td>
+			<td> MATH8 - Intro Computer Mathematics <br/>
+				 Lecture<br/>
+				 Miles Wilson
+			</td>
+		</tr>
+		<tr>
+			<td> 12:30 PM </td>
+			<td> COMP 211 - Program Design <br/>
+				 Lecture <br/>
+				Janis Michael
+			</td>
+			<td> COMP 211 - Program Design <br/>
+				 Lecture <br/>
+				Janis Michael
+			</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+		</tr>
+		<tr>
+			<td> 1:30 PM </td>
+			<td> COMP 211 - Program Design <br/>
+				 Lecture <br/>
+				Janis Michael
+			</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> COMP 205 - Web Development<br/>
+				 Lecture<br/>
+				 Colin Banger 
+			</td>
+			<td> &nbsp;</td>
+		</tr>
+		<tr>
+			<td> 2:30 PM </td>
+			<td> COMM 110 - Communitication For College<br/>
+				Lecture<br/>
+				Brooke Leeson<br/>
+			</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> COMM 110 - Communitication For College<br/>
+				 Lecture<br/>
+				 Brooke Leeson 
+			</td>
+			<td> COMP 1100 - Intro to C++ Programming<br/>
+				 Lecture<br/>
+				 Colin Graves
+			</td>
+		</tr>
+		<tr>
+			<td> 3:30 PM </td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> COMM 110 - Communitication For College<br/>
+				 Lecture<br/>
+				 Brooke Leeson
+			</td>
+			<td> COMP 1100 - Intro to C++ Programming<br/>
+				 Lecture<br/>
+				 Colin Graves
+			</td>
+		</tr>
+		<tr>
+			<td> 4:30 PM </td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+		</tr>
+		<tr>
+			<td> 5:30 PM </td>
+			<td> COMP 1100 - Intro to C++ Programming<br/>
+				Lab<br/>
+				Colin Graves<br/>
+			</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+			<td> &nbsp;</td>
+		</tr>
+	</table>
+</body>
+</html>
